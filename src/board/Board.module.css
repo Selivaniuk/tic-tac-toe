@@ -1,0 +1,71 @@
+.board {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: solid 1px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info * {
+    font-size: 18px;
+}
+.winLine1,
+.winLine2,
+.winLine3,
+.winLine4,
+.winLine5,
+.winLine6,
+.winLine7,
+.winLine8 {
+    height: 0px;
+    border: 1px #44e1d1 solid;
+    border-right: none;
+    border-left: none;
+}
+.winLine1,
+.winLine2,
+.winLine3 {
+    width: 490px;
+    left: 5px;
+}
+.winLine1 {
+    top: 41px;
+}
+.winLine2 {
+    top: 123px;
+}
+.winLine3 {
+    top: 205px;
+}
+
+.winLine4,
+.winLine5,
+.winLine6 {
+    width: 245px;
+    top: 122px;
+    transform: rotate(90deg);
+}
+.winLine4 {
+    left: -37px;
+}
+.winLine5 {
+    left: 129px;
+}
+.winLine6 {
+    left: 295px;
+}
+.winLine7,
+.winLine8 {
+    width: 539px;
+    top: 123px;
+    left: -21px;
+}
+.winLine7 {
+    transform: rotate(26deg);
+}
+.winLine8 {
+    transform: rotate(-26deg);
+}
